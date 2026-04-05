@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #e94560;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #aaa;
+}
+
+.btn {
+    background-color: #e94560;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #c73652;
+}
+
+/* CARDS */
+.info {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1a1a2e;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1a1a2e;
+    color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* TEMARIO */
+.temario {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.temario h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1a1a2e;
+}
+
+.temario ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.temario ul li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* INSCRIPCION */
+.inscripcion {
+    padding: 60px 20px;
+    text-align: center;
+    background: #1a1a2e;
+    color: white;
+}
+
+.inscripcion h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.inscripcion p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #aaa;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #1a1a2e;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
